@@ -6,5 +6,8 @@ Once upon a time (summer 2022) [csae8092](https://github.com/csae8092) trained a
 
 In order to make the process of merging those two datasets as reproducable as possible, the generated training data (`./dedupe_files/training.json`) as well as the ouput the dedupe workflow `output_link.csv` is checked into this repo.
 
-`fetch_data.sh` is a simple shell script to fetch the latest version of the Fackel-Personen data from a non public gitlab-repo and convert it into XML/time
+`fetch_data.sh` is a simple shell script to fetch the latest version of the Fackel-Personen data from a non public gitlab-repo and convert it into XML/TEI
 
+`add_idno.py` writes PMB and FACKEL-Person-URIS into the fackel listperson.xml
+
+To Be Done: wrap everything in a GitHub-Action which fetches, converts, enriches the Fackel-Persons and pushes the result into the (maybe soon public) https://github.com/karl-kraus/fackel-texte repo
