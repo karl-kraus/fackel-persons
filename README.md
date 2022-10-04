@@ -1,7 +1,6 @@
 # fackel-persons
 repo to automatgically merge Persons from Fackel with PMB
 
-
 Once upon a time (summer 2022) [csae8092](https://github.com/csae8092) trained a csv-dedupe model to match person entitites from the ["Fackel"](https://fackel.oeaw.ac.at/) with [PMB-Persons](https://pmb.acdh.oeaw.ac.at/). 
 
 In order to make the process of merging those two datasets as reproducable as possible, the generated training data (`./dedupe_files/training.json`) as well as the ouput the dedupe workflow `output_link.csv` is checked into this repo.
@@ -10,4 +9,4 @@ In order to make the process of merging those two datasets as reproducable as po
 
 `add_idno.py` writes PMB and FACKEL-Person-URIS into the fackel listperson.xml
 
-To Be Done: wrap everything in a GitHub-Action which fetches, converts, enriches the Fackel-Persons and pushes the result into the (maybe soon public) https://github.com/karl-kraus/fackel-texte repo
+Everything above is wrapped into GitHub-Action pushing the resulting file into https://github.com/karl-kraus/fackel-texte

@@ -32,4 +32,4 @@ jobs:
         destination_folder: 'indices'
         user_email: 'peter.andorfer@oeaw.ac.at.com'
         user_name: 'csae8092'
-        commit_message: 'copy XML/TEI files from fackel-to-tei'
+        commit_message: 'pushed listperson.xml from karl-kraus/fackel-persons'
