@@ -1,0 +1,13 @@
+{
+    "field_names_1": ["name", "birth_year", "death_year"],
+    "field_names_2": ["name", "birth_year", "death_year"],
+    "field_definition" : [{"field" : "name", "type" : "String"},
+                          {"field" : "birth_year", "type" : "String"},
+                          {"field" : "death_year", "type" : "String"}
+],
+    "output_file": "output.csv",
+    "skip_training": false,
+    "training_file": "training.json",
+    "sample_size": 150000,
+    "recall_weight": 2
+  }
