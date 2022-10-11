@@ -1,8 +1,11 @@
+import os
 import lxml.etree as ET
 
 from acdh_tei_pyutils.tei import TeiReader
 
 from config import LISTPERSON, FINAL
+
+os.makedirs('./data', exist_ok=True)
 
 transform = ET.XSLT(ET.parse('./xslt/tolistperson.xsl'))
 

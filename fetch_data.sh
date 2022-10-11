@@ -2,6 +2,7 @@
 echo "Make sure you have set an env-variable GITLAB_TOKEN"
 
 rm listperson_fackel.xml
+rm -rf ./data
 echo "downloading fackel persons from ${DL_URL}"
 wget -O listperson_fackel.xml --header "PRIVATE-TOKEN: ${GITLAB_TOKEN}" ${DL_URL}
 
@@ -12,6 +13,9 @@ wget -O konkordanz.csv --header "PRIVATE-TOKEN: ${GITLAB_TOKEN}" "https://gitlab
 
 echo "transforming fackel persons into TEI"
 python transform.py
+
+echo "adding PMB IDs"
+python add_idno.py
 
 echo "add GND and WikiData IDs"
 python add_gnd_ids.py

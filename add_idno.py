@@ -5,9 +5,9 @@ import os
 from tqdm import tqdm
 from acdh_tei_pyutils.tei import TeiReader
 
-from config import LISTPERSON, DEDUPE_DATA, FINAL
+from config import DEDUPE_DATA, FINAL
 
-doc = TeiReader(LISTPERSON)
+doc = TeiReader(FINAL)
 nsmap = doc.nsmap
 df = pd.read_csv(DEDUPE_DATA)
 df = df[df['id'].notna()]
