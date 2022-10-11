@@ -19,9 +19,6 @@ jobs:
     - name: fetch data
       run: |
         ./fetch_data.sh
-    - name: extract md
-      run: |
-        python add_idno.py
     - name: Copy processed data to karl-kraus/fackel-texte
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
